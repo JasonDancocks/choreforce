@@ -57,5 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development do
 gem "capistrano", "~> 3.10", require: false
 gem "capistrano-rails", "~> 1.3", require: false
+gem "capistrano-rvm"
 gem 'letter_opener'
 end

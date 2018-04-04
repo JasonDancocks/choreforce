@@ -1,0 +1,26 @@
+<div id="splash">
+    <h1>The Choreforce </h1>
+    <h2> Tagline goes here</h2>
+
+    <a href="#"> Contact Us </a>
+
+</div>
+
+<div id="main">
+    <h1> Services Offered</h1>
+    <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+    </ul>
+
+    <a href="#"> Contact Us </a>
+</div>
+
+<div id="contact">
+    <%= form_for @message do |f| %>
+        <%= f.text_field :name, placeholder: 'name' %>
+        <%= f.email_field :email, placeholder: 'email' %>
+        <%= f.text_area :body, placeholder: 'body' %>
+        <%= f.submit 'Send' %>
+    <% end %>
+</div>

@@ -1,21 +1,37 @@
 <div id="splash">
-    <h1>The Choreforce </h1>
-    <h2> Tagline goes here</h2>
+    <div id="splash-headings">
+    <h1 class="logo">The Choreforce </h1>
+    <h2 class="text"> Tagline goes here</h2>
+    </div>
 
-    <a href="#"> Contact Us </a>
-
+    <div id="service-headings" class="text">
+        <div class="service-select">
+            <%= image_tag("cleaning.svg", class: "splash-icon") %>
+            <button class="btn "> Cleaning
+            </button>
+        </div>
+        <div class="service-select">
+             <%= image_tag("pets.svg", class: "splash-icon")%>
+            <button class = "btn"> Pets
+            </button>
+        </div> 
+        <div class="service-select">
+             <%= image_tag("laundry.svg", class: "splash-icon")%>
+            <button class = "btn"> Laundry
+            </button>
+        </div>       
+    </div>
 </div>
 
-<div id="main">
+<div id="services" class="text">
     <h1> Services Offered</h1>
     <ul>
         <li>Service 1</li>
         <li>Service 2</li>
     </ul>
 
-    <a href="#"> Contact Us </a>
 </div>
 
-<div id="contact">
+<div id="contact" class="text">
   <%= link_to "Contact Us", new_message_path%>
 </div>

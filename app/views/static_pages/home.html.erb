@@ -17,10 +17,5 @@
 </div>
 
 <div id="contact">
-    <%= form_for @message do |f| %>
-        <%= f.text_field :name, placeholder: 'name' %>
-        <%= f.email_field :email, placeholder: 'email' %>
-        <%= f.text_area :body, placeholder: 'body' %>
-        <%= f.submit 'Send' %>
-    <% end %>
+  <%= link_to "Contact Us", new_message_path%>
 </div>
